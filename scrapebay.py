@@ -20,8 +20,7 @@ class ScrapebaySpider(CrawlSpider):
     )
 
     def absolute_url(self, links: list[Link]) -> list[Link]:
-        """[summary]Receives a list of Link objects and
-            returns a list of Link objects with nocache appended.
+        """Receives a list of Link objects and returns a list of Link objects with nocache appended.
         """
         updated_links = []
         for link in links:
